@@ -12,7 +12,7 @@ $("#search-button").click(function(){
             $("#content").html("");
             response.data.forEach(function(x){
                 var picture = x.images.original.url;
-                $("#content").append(`<img src = ${picture}>`);
+                $("#content").append(`<img class = "pict" src = ${picture}>`);
             });
         }
   });
@@ -27,7 +27,10 @@ $("#random-button").click(function(){
         success: function(response) {
             randNum = Math.floor(Math.random() * response.data.length);
             $("#content").html("");
-            $("#content").append(`<img src = ${response.data[randNum].images.original.url}>`);
+            var imgs = $("#content").append(`<img class = "pict" src = ${response.data[randNum].images.original.url}>`);
+            $(".pict").click(function(){
+                console.log(response.data[randNum].images.original.url);
+});
         }
     });
 });

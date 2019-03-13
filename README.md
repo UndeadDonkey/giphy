@@ -39,7 +39,7 @@ Make sure to check off your items as you complete them. [ ] => [x]
     x- Create a button that randomly chooses only one gif from response.
     x- Display all the images in the response to the screen.
     - Create a mail_to link that will email the gif to anyone you want.
-    - Make the gif pop out in a modal when clicked on.
+    - Make the gif pop out in a model when clicked on.
 
 ### Wrap
 - [ ] Push your changes!
